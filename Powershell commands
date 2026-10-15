@@ -1,0 +1,20 @@
+to create new directory
+New-Item -Path "C:\" -Name "LabFiles" -ItemType "directory"   
+
+to download files from github
+([System.Net.WebClient]::new()).DownloadFile('https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer/archive/master.zip', 'C:\LabFiles\master.zip')
+
+
+Expand ZIP file
+Expand-Archive -Path 'C:\LabFiles\master.zip' -DestinationPath 'C:\LabFiles'
+
+Move files to C:\LabFiles
+Move-item -Path "C:\LabFiles\PL-400_Microsoft-Power-Platform-Developer-master\Allfiles\Labs\*" -Destination "C:\LabFiles" -confirm: $false
+
+
+Delete files that are not needed
+Remove-item 'C:\LabFiles\PL-400_Microsoft-Power-Platform-Developer-master' -recurse -force
+
+
+Delete ZIP file
+Remove-item 'C:\LabFiles\master.zip'
