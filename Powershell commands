@@ -18,3 +18,14 @@ Remove-item 'C:\LabFiles\PL-400_Microsoft-Power-Platform-Developer-master' -recu
 
 Delete ZIP file
 Remove-item 'C:\LabFiles\master.zip'
+
+
+
+download data migration utility through command prompt
+
+nuget Install Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf -Version 9.1.0.185
+
+
+Locate the newly created folder:
+Local Disk (C:) -> Users -> Admin -> .nuget -> Packages -> Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf -> 9.1.0.185 -> Tools
+Once inside the correct folder, find DataMigrationUtility.exe and launch it from here.
