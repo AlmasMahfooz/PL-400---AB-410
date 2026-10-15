@@ -29,3 +29,7 @@ nuget Install Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf -Version 9.
 Locate the newly created folder:
 Local Disk (C:) -> Users -> Admin -> .nuget -> Packages -> Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf -> 9.1.0.185 -> Tools
 Once inside the correct folder, find DataMigrationUtility.exe and launch it from here.
+
+
+launch CMT tool: Launch the Configuration Migration Tool using the following command:
+pac tool cmtllie
